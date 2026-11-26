@@ -19,6 +19,7 @@ import {
   X,
 } from 'lucide-react'
 import './styles.css'
+import { LandingApp } from './landing.jsx'
 
 const categories = ['All topics', 'AI agents', 'Generative AI', 'AI coding', 'Multimodal', 'AI safety']
 
@@ -241,4 +242,4 @@ function GeneratorModal({ trend, channel, setChannel, copied, onCopy, onClose })
   </div>
 }
 
-createRoot(document.getElementById('root')).render(<StrictMode><App /></StrictMode>)
+createRoot(document.getElementById('root')).render(<StrictMode><LandingApp /></StrictMode>)
